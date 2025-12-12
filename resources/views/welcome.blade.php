@@ -25,7 +25,7 @@
             <main class="flex max-w-[335px] w-2/4 flex-col-reverse lg:max-w-4xl lg:flex-row">
                 <div class="text-[15px] leading-[24px] flex-1 p-8 lg:p-20 bg-gray-500 dark:bg-[#282827] dark:text-[#EDEDEC] shadow-md rounded-lg flex flex-col items-center justify-center text-center space-y-6">
                     {{-- @include('partials.flash') --}}
-                    <h1 class="mb-6"><b>Welcome to Security Web!</b></h1>
+                    <h1 class="mb-6"><b>Welcome anjayyy</b></h1>
                     <div class="w-full flex justify-center align-items-center min-vh-100">
                         <div class="flex gap-4">
                             @if (Route::has('register'))
