@@ -19,37 +19,36 @@
             </style>
         @endif
     </head>
-    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] min-h-screen flex items-center justify-center p-6 lg:p-8">
-        <div class="flex items-center justify-center w-full">
-    <main class="max-w-[335px] w-full lg:max-w-4xl">
-        <div class="text-[15px] leading-[24px] p-8 lg:p-20 bg-gray-500 dark:bg-[#282827]
-                    dark:text-[#EDEDEC] shadow-md rounded-lg flex flex-col items-center
-                    justify-center text-center space-y-6">
+    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] min-h-screen flex items-center justify-center">
+        <div class="flex items-center justify-center w-full h-full">
+            <main class="flex max-w-[335px] w-full flex-col-reverse lg:max-w-4xl lg:flex-row">
+                <div class="text-[15px] leading-[24px] p-8 lg:p-20 bg-gray-500 dark:bg-[#282827]
+                            dark:text-[#EDEDEC] shadow-md rounded-lg flex flex-col items-center
+                            justify-center text-center space-y-6">
 
-            <h1 class="mb-6 font-bold">Welcome to Security Web!</h1>
+                    <h1 class="mb-6 font-bold">Welcome to Security Web!</h1>
 
-            <div class="flex gap-4 justify-center">
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}"
-                       class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a]
-                              border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b]
-                              rounded-md text-sm leading-normal">
-                        Register
-                    </a>
-                @endif
+                    <div class="flex gap-4 justify-center">
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}"
+                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a]
+                                    border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b]
+                                    rounded-md text-sm leading-normal">
+                                Register
+                            </a>
+                        @endif
 
-                <a href="{{ route('login') }}"
-                   class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a]
-                          border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b]
-                          rounded-md text-sm leading-normal">
-                    Log in
-                </a>
-            </div>
+                        <a href="{{ route('login') }}"
+                        class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a]
+                                border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b]
+                                rounded-md text-sm leading-normal">
+                            Log in
+                        </a>
+                    </div>
 
+                </div>
+            </main>
         </div>
-    </main>
-</div>
-
 
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
