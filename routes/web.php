@@ -39,7 +39,7 @@ Route::group(['middleware' => ['auth', 'check_role:customer']], function () {
 });
 
 Route::group(['middleware' => ['auth', 'check_role:customer', 'check_status']], function () {
-    Route::get('/customer', fn() => 'SELAMAT ANDA BERHASIL LOGIN');
+    Route::get('/customer', fn() => 'SELAMAT ANDA BERHASIL LOGIN SEBAGAI CUSTOMER');
 });
 Route::group(['middleware' => ['auth', 'check_role:admin,staff']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index']);
